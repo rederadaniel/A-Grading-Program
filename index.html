@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Semester Grading Program | Learning Activity #4</title>
+    <link rel="icon" href="glow.gif" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>2nd Semester Grading Program</h1>
+    <p>"This system is a dynamic grading program that allows users to input grades across various categories—including quizzes, recitations,  <br> long tests, projects, attendance, and exams. 
+        It automatically calculates the final grade based on the entered data and provides <br> real-time warnings for any invalid or incorrect grade inputs."</p>
+
+    <div class="form-container">
+        <!-- Name, Section, and Date -->
+        <div class="input-fields">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <label for="section">Section:</label>
+            <input type="text" id="section" placeholder="Enter your section" />
+            <label for="date">Date:</label>
+            <input type="date" id="date" />
+        </div>
+
+        <!-- Grade Categories Table -->
+        <div class="table-container">
+            <table id="main-card">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Max Score</th>
+                        <th>Max Percent</th>
+                        <th>Your Score</th>
+                        <th>Grade (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category">Quiz (10%)</td>
+                        <td>100</td>
+                        <td>10</td> <!-- Fixed max score -->
+                        <td><input type="number" id="quiz-score" max="50" min="0"></td>
+                        <td id="quiz-grade">0.00%</td>
+                    </tr>
+                    <tr>
+                        <td class="category">Recitation (15%)</td>
+                        <td>100</td>
+                        <td>16</td> <!-- Fixed max score -->
+                        <td><input type="number" id="recitation-score" max="15" min="0"></td>
+                        <td id="recitation-grade">0.00%</td>
+                    </tr>
+                    <tr>
+                        <td class="category">Long Test (15%)</td>
+                        <td>100</td>
+                        <td>15</td> <!-- Fixed max score -->
+                        <td><input type="number" id="longtest-score" max="100" min="0"></td>
+                        <td id="longtest-grade">0.00%</td>
+                    </tr>
+                    <tr>
+                        <td class="category">Project (35%)</td>
+                        <td>100</td>
+                        <td>35</td> <!-- Fixed max score -->
+                        <td><input type="number" id="project-score" max="100" min="0"></td>
+                        <td id="project-grade">0.00%</td>
+                    </tr>
+                    <tr>
+                        <td class="category">Attendance (5%)</td>
+                        <td>100</td>
+                        <td>5</td> <!-- Fixed max score -->
+                        <td><input type="number" id="attendance-score" max="100" min="0"></td>
+                        <td id="attendance-grade">0.00%</td>
+                    </tr>
+                    <tr>
+                        <td class="category">Exam (20%)</td>
+                        <td>100</td>
+                        <td>20</td> <!-- Fixed max score -->
+                        <td><input type="number" id="exam-score" max="100" min="0"></td>
+                        <td id="exam-grade">0.00%</td>
+                    </tr>
+                    <tr class="final-grade">
+                        <td>Total Grade</td>
+                        <td colspan="4" id="final-grade">0.00%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="message-box" id="message-box">
+            <p id="final-message"></p>
+            <p id="remarks"></p>
+        </div>
+
+        <div class="warning-msg" id="warning-msg" style="display:none;">
+            Please enter valid scores within the allowed range (0-100).
+        </div>
+    </div>    
+
+    <div class="footer">
+        <button onclick="FinalCalculate()">Calculate Final Grade</button>
+    </div> <br> <br>
+
+    <audio id="sad-song" src="sad-song.mp3"></audio>
+    <audio id="happy-song" src="happy-song.mp3"></audio>
+    <audio id="little-happy" src="little-happy.mp3"></audio>
+    <audio id="congrats-song" src="congrats-song.mp3"></audio>
+    <audio id="sigma-song" src="sigma-song.mp3"></audio>
+
+    <script src="main.js"></script>
+
+ </body> </html>

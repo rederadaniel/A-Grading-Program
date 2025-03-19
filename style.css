@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+p {
+    color: #7f8c8d;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input[type="text"], .form-container input[type="date"], .form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-container label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.table-container {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ecf0f1;
+}
+
+.input-cell input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-cell input:focus {
+    outline: none;
+    border: 1px solid #3498db;
+}
+
+.final-grade {
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.message-box {
+    background-color: #d9f9d8;
+    color: #2d6a4f;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.warning-msg {
+    color: #e74c3c;
+    background-color: #f8d7da;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.remarks {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
